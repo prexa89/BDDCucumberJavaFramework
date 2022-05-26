@@ -10,5 +10,21 @@ public class LoginPage extends DriverManager {
     public String getWelcomeMessageOnLoginPage(){
        return welcomeSignInText.getText();
 
+    }@FindBy(id = "Email")
+    WebElement email;
+    @FindBy(id = "Password")
+    WebElement password;
+    @FindBy(xpath = "//button[@class='button-1 login-button']")
+    WebElement button;
+    public void myEmail(String mail){
+        email.clear();
+        email.sendKeys(mail);
+
+    }public void myPassword(String pass){
+        password.clear();
+        password.sendKeys(pass);
+    }public void clickButton(){
+        button.click();
+
     }
 }
