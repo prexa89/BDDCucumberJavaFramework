@@ -34,5 +34,22 @@ public class RegisterPage extends DriverManager {
       WebElement reButton;
     public void registerButton(){
         reButton.click();
+    }@FindBy(xpath = "//span[@class='female']")
+    WebElement radio;
+    public void setRadio() {
+        radio.click();
+    }@FindBy(name = "DateOfBirthDay")
+    WebElement dob;
+    public void dateOfBirth(){
+        dob.sendKeys("9");
+    }@FindBy(xpath = "//select[@name='DateOfBirthMonth']")
+    WebElement dom;
+    public void dateOfMonth(){
+        dom.sendKeys("April");
+    }@FindBy(xpath = "//select[@name='DateOfBirthYear']")
+    WebElement doy;
+    public void dateOfYear(){
+        doy.sendKeys("2000");
     }
+
 }

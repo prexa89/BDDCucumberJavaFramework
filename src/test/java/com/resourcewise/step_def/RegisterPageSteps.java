@@ -20,36 +20,36 @@ public class RegisterPageSteps extends DriverManager {
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
         registerPage.regButton();
-    }//@When("^I enter first name as\"([^\"]*)\" last name as \"([^\"]*)\" email address \"$")
-    //public void i_enter_first_name_as_last_name_as_email_address(String CurrentName, String CurrentLastName) throws Throwable {
-    @When("^I enter firstname as\"([^\"]*)\" and lastname as \"([^\"]*)\"$")
+      } @When("^I select gender as female$")
+        public void i_select_gender_as_female() throws Throwable {
+        registerPage.setRadio();
+
+    }    @And("^I enter firstname as\"([^\"]*)\" and lastname as \"([^\"]*)\"$")
     public void i_enter_firstname_as_and_lastname_as(String CurrentName, String CurrentLastName) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-       // throw new PendingException();
+
         registerPage.firstName(CurrentName);
         registerPage.lstName(CurrentLastName);
     }  @And("^I enter Email as \"([^\"]*)\"$")
         public void i_enter_Email_as(String CurrentEmail) throws Throwable {
-            // Write code here that turns the phrase above into concrete actions
-           // throw new PendingException();
         registerPage.myMail(CurrentEmail);
         }
+    @When("^I select date of birth and month of birth and year of birth$")
+    public void i_select_date_of_birth_and_month_of_birth_and_year_of_birth() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        //throw new PendingException();
+        registerPage.dateOfBirth();
+        registerPage.dateOfMonth();
+        registerPage.dateOfYear();
+    }
+
 
     @And("^I enter  password as\"([^\"]*)\" and  enter confirm password as \"([^\"]*)\"$")
     public void i_enter_password_as_and_enter_confirm_password_as(String CurrentPassword, String CurrentConfirmPassword) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        // throw new PendingException();
         registerPage.passWord(CurrentPassword);
         registerPage.confirmPasssword(CurrentConfirmPassword);
     }@When("^I click on register button$")
     public void i_click_on_register_button() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        //throw new PendingException();
 
-    //@And("^: I click on register button$")
-   // public void i_click_on_register_button() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-       // throw new PendingException();
         registerPage.registerButton();
     }
 }
