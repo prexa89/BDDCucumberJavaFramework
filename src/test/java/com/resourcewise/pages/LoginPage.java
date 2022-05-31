@@ -26,5 +26,14 @@ public class LoginPage extends DriverManager {
     }public void clickButton(){
         button.click();
 
+    }@FindBy(xpath = "//a[@class='ico-logout']")
+    WebElement logoutB;
+    public boolean logoutButtonDisplayed(){
+        return logoutB.isDisplayed();
+    }
+    @FindBy(xpath = "//a[@class='ico-logout']")
+    WebElement logoutButton;
+    public void clickLogout(){
+        logoutButton.click();
     }
 }

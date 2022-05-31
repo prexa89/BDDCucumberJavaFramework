@@ -50,7 +50,7 @@ Feature: Registration feature
     When I select gender as male
     And I enter following details to register
       | firstName | lastName | email          | password  | confirmPassword |
-      | parth    | khatri    | test1@gmail.com | 123456 | 123456git      |
+      | parth    | khatri    | test1@gmail.com | 123456 | 123456      |
    # And  I enter firstname as"preet" and lastname as "shah"
     And I select date of birth and month of birth and year of birth
     And I enter company name as "Amazon"

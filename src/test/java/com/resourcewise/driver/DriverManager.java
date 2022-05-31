@@ -8,12 +8,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class DriverManager {
     public static WebDriver driver;
     String browser ="Chrome";
     String url="https://demo.nopcommerce.com/";
+    String myUrl="https://demo.nopcommerce.com/cart";
     public DriverManager(){
         PageFactory.initElements(driver,this);
         }
@@ -55,4 +57,13 @@ public class DriverManager {
     public String getUrl(){
         return driver.getCurrentUrl();
     }
-}
+    public int generateRandomNumber(){
+        Random random = new Random();
+        // Obtain a number between [0 - 49].
+        return random.nextInt(100);
+    }public void getMyUrl() {
+        driver.get(myUrl);
+    }
+
+
+    }

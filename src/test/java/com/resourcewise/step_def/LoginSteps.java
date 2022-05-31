@@ -2,7 +2,6 @@ package com.resourcewise.step_def;
 
 import com.resourcewise.driver.DriverManager;
 import com.resourcewise.pages.LoginPage;
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -12,7 +11,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
 
 
-public class LoginPageSteps extends DriverManager {
+public class LoginSteps extends DriverManager {
     LoginPage loginPage=new LoginPage();
     DriverManager driverManager=new DriverManager();
 
@@ -22,12 +21,10 @@ public class LoginPageSteps extends DriverManager {
        String myActualwelcomeMessage = loginPage.getWelcomeMessageOnLoginPage();
         assertThat(myActualwelcomeMessage,is(equalToIgnoringCase(expectedMessage)));
     }
-    @And("^the url should contain with\"([^\"]*)\"$")
-    public void the_url_should_contain_with(String expectedUrl) throws Throwable {
-        String actualUrl=driverManager.getUrl();
-        assertThat(actualUrl,containsString(expectedUrl));
 
-    }@Given("^I am on the login page$")
+
+
+    @Given("^I am on the login page$")
     public void i_am_on_the_login_page() throws Throwable {
         String myActualUrl= driverManager.getUrl();
         System.out.println(myActualUrl);
@@ -57,5 +54,18 @@ public class LoginPageSteps extends DriverManager {
         loginPage.clickButton();
         Thread.sleep(5000);
     }
+    @Then("^I should see logout button displayed$")
+    public void i_should_see_logout_button_displayed() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        //throw new PendingException();
+        boolean logoutButtonDisplayed=loginPage.logoutButtonDisplayed();
+        assertThat(logoutButtonDisplayed,is(true));
+
+    }  @Then("^I click on logoutbutton$")
+    public void i_click_on_logoutbutton() throws Throwable {
+        loginPage.clickLogout();
+    }
+
+
 
 }
