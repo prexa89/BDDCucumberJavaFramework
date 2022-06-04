@@ -35,12 +35,18 @@ public class BillingPage extends DriverManager {
     WebElement expireMonth;
     @FindBy(id = "ExpireYear")
     WebElement expireYear;
-    @FindBy(id = "CardCode")
+    @FindBy(xpath = "//input[@id='CardCode']")
     WebElement cardCode;
-    @FindBy(xpath = "//button[@onclick='PaymentInfo.save()'")
+    @FindBy(xpath = "//button[@onclick='PaymentInfo.save()']")
     WebElement continueButtonPaymentInfo;
-    @FindBy(xpath = "//button[@onclick='ConfirmOrder.save()")
+    @FindBy(xpath = "//button[@onclick='ConfirmOrder.save()']")
     WebElement confirmOrderButton;
+   // @FindBy(id = "shippingoption_1")
+   // WebElement shippingOption1;
+    @FindBy(xpath = "//button[@onclick='ShippingMethod.save()']")
+    WebElement shippingMethodContinueButton;
+    @FindBy(xpath="//div[@class='order-number']")
+    WebElement orderNum;
 
     public void country(String Country){
         countryName.sendKeys(Country);
@@ -59,6 +65,31 @@ public class BillingPage extends DriverManager {
         shippingOption.click();
     }public void shippingContinueButton(){
         shippingMethodContinue.click();
+    }//public void shippingOpt(){
+       // shippingOption.click();
+    public void shippingMethodContinueBtn(){
+        shippingMethodContinueButton.click();
+    }public void paymentMethodOne(){
+        paymentMethod.click();
+    }public void paymentMethodContiBtn(){
+        paymentMethodContinue.click();
+    }public void cardholderNam(String Namee){
+        cardholderName.sendKeys(Namee);
+    }public void cardNum(String Numb){
+        cardNumber.sendKeys(Numb);
+    }public void cardExpireMonth(String ExpM){
+        expireMonth.sendKeys(ExpM);
+    }public void cardExpireYear(String ExpY){
+        expireYear.sendKeys(ExpY);
+    }public void codeOfCard(String Code){
+        cardCode.sendKeys(Code);
+    }public void contiBtnPaymentInfo(){
+        continueButtonPaymentInfo.click();
+    }public void confirmOrderBtn(){
+        confirmOrderButton.click();
+    }public String orderNumber(){
+       return orderNum.getText();
     }
+
 
 }

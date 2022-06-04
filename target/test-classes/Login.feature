@@ -14,10 +14,10 @@ Feature: Login feature
   Scenario:Successful login
     Given I am on the home page
     And  I Click on the Log in
-    Given I enter Email as "admin12@yahoo.com" and password as "123456"
+    Given I enter Email as "61preet12@yahoo.com" and password as "123456"
     When I Click on the Login button
     Then  I should see logout button displayed
-   # And  I click on logoutbutton
+    And  I click on logoutbutton
 
 
   Scenario Outline: login With more than one email id and password
@@ -26,7 +26,7 @@ Feature: Login feature
     Given I enter Email as "<Email>" and password as "<Password>"
     When I Click on the Login button
     Then  I should see logout button displayed
-    #And  I click on logoutbutton
+    And  I click on logoutbutton
     Examples:
       | Email            | Password |
       | admin@yahoo.com  | 123456   |
@@ -41,6 +41,16 @@ Feature: Login feature
     Given I enter  Email as "admin12@yahoo.com"
     When I click on the login button
     #Then I should not be logged in
+
+  Scenario: Forgot password link functionality
+    Given I am on the home page
+    And  I Click on the Log in
+    And I enter Email as "76preet12@yahoo.com"
+    When I click on forgot password
+    Then  I should be on password recovery page
+    And  I enter  Email as "76preet12@yahoo.com"
+    And I click on recover button
+    And I should see the email sent message
 
 
 

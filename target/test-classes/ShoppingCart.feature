@@ -1,3 +1,4 @@
+@AddToCart
 Feature: Category feature
   As a customer I Want to buy
   a product.
@@ -15,7 +16,7 @@ Feature: Category feature
    # And   I click on shopping cart
    # When  I click on terms and condition
    # And   I click on checkout button
-   # And  I enter Email as "<string>" and password as "<string>" to logim
+   # And  I enter Email as "<string>" and password as "<string>" to login
   #  And  I Click on the Login button
     #And I am on shopping cart page and click
 
@@ -28,7 +29,7 @@ Feature: Category feature
     And I select subcategory of desktops
     And I select the Lenovo PC
     And I add this product into the cart
-    #And I close add to cart message
+    And I close add to cart message
     When I click on shopping cart Button
     And I click on terms and condition
     And I click on checkout button

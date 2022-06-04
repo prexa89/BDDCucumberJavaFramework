@@ -100,8 +100,8 @@ public class RegisterSteps extends DriverManager {
     public void i_select_option_for_Newspaper() throws Throwable {
         //registerPage.newsLetterCheckBox();
         registerPage.newsLetterCheckBox();
-        // boolean newsLetterCheckBox = registerPage.newsLetterCheckBox();
-        // assertThat(newsLetterCheckBox, is(true));
+         boolean newsLetterCheckBox = registerPage.newsLetterCheckBox();
+         assertThat(newsLetterCheckBox, is(true));
     }    //System.out.println();
 
 
@@ -114,9 +114,11 @@ public class RegisterSteps extends DriverManager {
         // public void iSelectGenderAs(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         // throw new PendingException();
-        @When("^I  do not select  option for Newspaper$")
+        @And("^I  do not select  option for Newspaper$")
         public void i_do_not_select_option_for_Newspaper() throws Throwable {
-            registerPage.newsLetterCheckBox();
+          boolean newsCheckBox= registerPage.newsLetterCheckBox();
+          assertThat(newsCheckBox,is(false));
+            System.out.println("status"+ " "+ newsCheckBox);
 
         }
     }

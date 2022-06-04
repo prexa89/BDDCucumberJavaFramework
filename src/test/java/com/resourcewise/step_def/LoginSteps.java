@@ -2,6 +2,7 @@ package com.resourcewise.step_def;
 
 import com.resourcewise.driver.DriverManager;
 import com.resourcewise.pages.LoginPage;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -61,10 +62,31 @@ public class LoginSteps extends DriverManager {
         boolean logoutButtonDisplayed=loginPage.logoutButtonDisplayed();
         assertThat(logoutButtonDisplayed,is(true));
 
-    }  @Then("^I click on logoutbutton$")
+    }  @And("^I click on logoutbutton$")
     public void i_click_on_logoutbutton() throws Throwable {
         loginPage.clickLogout();
+
+    }@When("^I click on forgot password$")
+    public void i_click_on_forgot_password() throws Throwable {
+        loginPage.forgotPasswordLink();
     }
+    @Then("^I should be on password recovery page$")
+    public void i_should_be_on_password_recovery_page() throws Throwable {
+    String pageTitle=loginPage.pageTitleMsg();
+        System.out.println("Title" + " " +pageTitle);
+
+    }@And("^I click on recover button$")
+    public void i_click_on_recover_button() throws Throwable {
+        loginPage.recoverButton();
+
+    }
+
+    @And("^I should see the email sent message$")
+    public void i_should_see_the_email_sent_message() throws Throwable {
+    String insMsg=loginPage.instructionMessage();
+        System.out.println(insMsg);
+    }
+
 
 
 
