@@ -47,6 +47,8 @@ public class BillingPage extends DriverManager {
     WebElement shippingMethodContinueButton;
     @FindBy(xpath="//div[@class='order-number']")
     WebElement orderNum;
+    @FindBy(xpath = "//strong[contains(text(),'Your order has been successfully processed!')]")
+    WebElement confirmationMsg;
 
     public void country(String Country){
         countryName.sendKeys(Country);
@@ -89,6 +91,8 @@ public class BillingPage extends DriverManager {
         confirmOrderButton.click();
     }public String orderNumber(){
        return orderNum.getText();
+    }public String confirmationMessage(){
+        return confirmationMsg.getText();
     }
 
 

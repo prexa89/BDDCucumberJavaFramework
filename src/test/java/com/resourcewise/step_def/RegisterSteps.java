@@ -22,7 +22,6 @@ public class RegisterSteps extends DriverManager {
 
     @Given("^: I am at registration page$")
     public void i_am_at_registration_page() throws Throwable {
-
     }
 
     @And("^I click on register$")
@@ -38,21 +37,15 @@ public class RegisterSteps extends DriverManager {
     public void i_select_gender_as_male() throws Throwable {
         registerPage.setMaleRadio();
     }
-
-
     @And("^I enter firstname as\"([^\"]*)\" and lastname as \"([^\"]*)\"$")
     public void i_enter_firstname_as_and_lastname_as(String CurrentName, String CurrentLastName) throws Throwable {
-
         registerPage.firstName(CurrentName);
-        registerPage.lstName(CurrentLastName);
-    }
+        registerPage.lstName(CurrentLastName);    }
 
     @And("^I enter Email as \"([^\"]*)\"$")
     public void i_enter_Email_as(String CurrentEmail) throws Throwable {
         registerPage.myMail(CurrentEmail);
-
     }
-
     @When("^I select date of birth and month of birth and year of birth$")
     public void i_select_date_of_birth_and_month_of_birth_and_year_of_birth() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
@@ -61,14 +54,11 @@ public class RegisterSteps extends DriverManager {
         registerPage.dateOfMonth();
         registerPage.dateOfYear();
     }
-
-
     @And("^I enter  password as\"([^\"]*)\" and  enter confirm password as \"([^\"]*)\"$")
     public void i_enter_password_as_and_enter_confirm_password_as(String CurrentPassword, String CurrentConfirmPassword) throws Throwable {
         registerPage.passWord(CurrentPassword);
         registerPage.confirmPasssword(CurrentConfirmPassword);
     }
-
     @When("^I click on register button$")
     public void i_click_on_register_button() throws Throwable {
         registerPage.registerButton();
@@ -83,7 +73,6 @@ public class RegisterSteps extends DriverManager {
         registerPage.myMail(data.get(0).get("email"));
         registerPage.passWord(data.get(0).get("password"));
         registerPage.confirmPasssword(data.get(0).get("confirmPassword"));
-
         // Write code here that turns the phrase above into concrete actions
         // For automatic transformation, change DataTable to one of
         // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
@@ -93,28 +82,32 @@ public class RegisterSteps extends DriverManager {
     @When("^I enter company name as \"([^\"]*)\"$")
     public void i_enter_company_name_as(String company) throws Throwable {
         registerPage.myCompanyName(company);
-
     }
 
     @When("^I select  option for Newspaper$")
     public void i_select_option_for_Newspaper() throws Throwable {
-        //registerPage.newsLetterCheckBox();
         registerPage.newsLetterCheckBox();
          boolean newsLetterCheckBox = registerPage.newsLetterCheckBox();
          assertThat(newsLetterCheckBox, is(true));
-    }    //System.out.println();
-
-
+        System.out.println(newsLetterCheckBox);
+    }
         //@And("^I click on logoutbutton$")
         // public void i_click_on_logoutbutton() throws Throwable {
         //registerPage.clickLogout();
 
 
-        // @When("^I select gender as \"([^\"]*)\"$")
-        // public void iSelectGenderAs(String arg0) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        // throw new PendingException();
-        @And("^I  do not select  option for Newspaper$")
+         @When("^I select gender as \"([^\"]*)\"$")
+         public void iSelectGenderAs(String gender) throws Throwable {
+        switch (gender){
+            case "female":
+                registerPage.setRadio();
+         break;
+            case "male":
+                registerPage.setMaleRadio();
+         break;
+        }
+         }
+         @And("^I do not select option for Newspaper$")
         public void i_do_not_select_option_for_Newspaper() throws Throwable {
           boolean newsCheckBox= registerPage.newsLetterCheckBox();
           assertThat(newsCheckBox,is(false));

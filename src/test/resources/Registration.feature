@@ -42,13 +42,13 @@ Feature: Registration feature
   Scenario: Successful registration
     Given  I am on the home page
     And  I click on register
-    When I select gender as male
+    When I select gender as "male"
     And I enter following details to register
       | firstName | lastName | email          | password  | confirmPassword |
       | parth    | khatri    | test1@gmail.com | 123456 | 123456     |
     And I select date of birth and month of birth and year of birth
     And I enter company name as "Amazon"
-    And I  do not select  option for Newspaper
+    And I do not select option for Newspaper
     And I click on register button
     Then I Should see "Your registration completed" text on "registration" page
     And the url should contain with"/registerresult"

@@ -82,5 +82,11 @@ public class BillingSteps extends DriverManager {
     public void i_should_get_order_number() throws Throwable {
      String orderNumber  =billingPage.orderNumber();
         System.out.println("My order" + " "+orderNumber);
-    }
+    }@And("^I should get order message$")
+      public void i_should_get_order_message() throws Throwable {
+       String conMsg = billingPage.confirmationMessage();
+       System.out.println(conMsg);
+
+
+}
 }
