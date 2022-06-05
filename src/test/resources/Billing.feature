@@ -40,8 +40,12 @@ Feature: Billing feature
     Scenario: end to end functionality
       Given I am on the home page
       And  I click on register
+      And I select gender as "male"
       When I enter firstname as"preet" and lastname as "shah"
+      And I select date of birth and month of birth and year of birth
       And  I enter Email as "preet12@yahoo.com"
+      And I enter company name as "Amazon"
+      And I do not select option for Newspaper
       And  I enter  password as"123456" and  enter confirm password as "123456"
       And  I click on register button
       And I select category of computer
