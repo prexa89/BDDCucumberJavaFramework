@@ -53,3 +53,16 @@ Feature: Registration feature
     Then I Should see "Your registration completed" text on "registration" page
     And the url should contain with"/registerresult"
 
+Scenario Outline: Successful registration with mandatory fields
+  Given I am on the home page
+  When  I click on register
+  And I enter firstname as"<firstname>" and lastname as "<lastname>"
+  And I enter Email as "<email>"
+  And I enter  password as"<password>" and  enter confirm password as "<confirmpassword>"
+  And I click on register button
+  Examples:
+  |firstname|lastname|email|password|confirmpassword|
+  |priya    |shah    |admin@yahoo.com  | 123456 |123456|
+   |sam      |dev    |admin1@yahoo.com | 123456 |123456|
+   |preet    |shah   |admin2@yahoo.com | 456789|456789 |
+   |harry    |dave   |admin3@yahoo.com | 123456 |123456|

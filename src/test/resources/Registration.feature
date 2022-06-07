@@ -23,7 +23,7 @@ Feature: Registration feature
     And I click on register button
     Then I Should see "Your registration completed" text on "registration" page
     And the url should contain with"/registerresult"
-@pj
+
   Scenario: Successful registration with all optional fields
     Given I am on the home page
     And  I click on register
@@ -37,7 +37,7 @@ Feature: Registration feature
     And I click on register button
     Then I Should see "Your registration completed" text on "registration" page
     And the url should contain with"/registerresult"
-   # And I click on logoutbutton
+
 
   Scenario: Successful registration
     Given  I am on the home page
@@ -53,3 +53,16 @@ Feature: Registration feature
     Then I Should see "Your registration completed" text on "registration" page
     And the url should contain with"/registerresult"
 
+Scenario Outline: Successful multiple registration with mandatory fields
+  Given I am on the home page
+  When  I click on register
+  And I enter firstname as"<firstname>" and lastname as "<lastname>"
+  And I enter Email as "<email>"
+  And I enter  password as"<password>" and  enter confirm password as "<confirmpassword>"
+  And I click on register button
+  Examples:
+  |firstname|lastname|email|password|confirmpassword|
+  |priya    |shah    |admin@yahoo.com  | 123456 |123456|
+   |sam      |dev    |admin1@yahoo.com | 123456 |123456|
+   |preet    |shah   |admin2@yahoo.com | 456789|456789 |
+   |harry    |dave   |admin3@yahoo.com | 123456 |123456|
