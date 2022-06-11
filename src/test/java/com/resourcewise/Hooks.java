@@ -15,7 +15,10 @@ public class Hooks {
             driverManager.maxBrowser();
             driverManager.applyImplicitWait();
 } @After
-    public void tearDown(){
+    public void tearDown(Scenario scenario){
+       if (scenario.isFailed()){
+           driverManager.takeScreenshot(scenario);
+       }
     driverManager.closeBrowser();
 
     }

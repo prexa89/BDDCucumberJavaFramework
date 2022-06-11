@@ -10,7 +10,7 @@ Feature: Login feature
     When I Click on the Log in
     Then I Should see "Welcome, Please Sign In!" text on "login" page
     And the url should contain with"/login"
-
+@pj
   Scenario:Successful login
     Given I am on the home page
     And  I Click on the Log in

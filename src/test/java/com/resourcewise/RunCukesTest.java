@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources",
            dryRun = false,
             strict = true,
-            tags = "@Endtoend",
+            tags = "@pj",
             plugin = "json:target/cucumber-report/cucumber.json")
 
 public class RunCukesTest {
