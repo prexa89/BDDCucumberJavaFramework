@@ -12,7 +12,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
 
 
-public class LoginPageSteps extends DriverManager {
+public class LoginSteps extends DriverManager {
     LoginPage loginPage=new LoginPage();
     DriverManager driverManager=new DriverManager();
 
@@ -22,12 +22,10 @@ public class LoginPageSteps extends DriverManager {
        String myActualwelcomeMessage = loginPage.getWelcomeMessageOnLoginPage();
         assertThat(myActualwelcomeMessage,is(equalToIgnoringCase(expectedMessage)));
     }
-    @And("^the url should contain with\"([^\"]*)\"$")
-    public void the_url_should_contain_with(String expectedUrl) throws Throwable {
-        String actualUrl=driverManager.getUrl();
-        assertThat(actualUrl,containsString(expectedUrl));
 
-    }@Given("^I am on the login page$")
+
+
+    @Given("^I am on the login page$")
     public void i_am_on_the_login_page() throws Throwable {
         String myActualUrl= driverManager.getUrl();
         System.out.println(myActualUrl);
@@ -57,5 +55,39 @@ public class LoginPageSteps extends DriverManager {
         loginPage.clickButton();
         Thread.sleep(5000);
     }
+    @Then("^I should see logout button displayed$")
+    public void i_should_see_logout_button_displayed() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        //throw new PendingException();
+        boolean logoutButtonDisplayed=loginPage.logoutButtonDisplayed();
+        assertThat(logoutButtonDisplayed,is(true));
+
+    }  @And("^I click on logoutbutton$")
+    public void i_click_on_logoutbutton() throws Throwable {
+        loginPage.clickLogout();
+
+    }@When("^I click on forgot password$")
+    public void i_click_on_forgot_password() throws Throwable {
+        loginPage.forgotPasswordLink();
+    }
+    @Then("^I should be on password recovery page$")
+    public void i_should_be_on_password_recovery_page() throws Throwable {
+    String pageTitle=loginPage.pageTitleMsg();
+        System.out.println("Title" + " " +pageTitle);
+
+    }@And("^I click on recover button$")
+    public void i_click_on_recover_button() throws Throwable {
+        loginPage.recoverButton();
+
+    }
+
+    @And("^I should see the email sent message$")
+    public void i_should_see_the_email_sent_message() throws Throwable {
+    String insMsg=loginPage.instructionMessage();
+        System.out.println(insMsg);
+    }
+
+
+
 
 }
