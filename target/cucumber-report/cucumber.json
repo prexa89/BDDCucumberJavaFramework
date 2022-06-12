@@ -1,0 +1,74 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 128135528585,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Screenshot",
+        "description": "",
+        "id": "element-screenshot;screenshot",
+        "after": [
+          {
+            "result": {
+              "duration": 1625534063,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1245540183,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the home page",
+            "match": {
+              "location": "HomePageSteps.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 565975141,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I take screenshot of search field",
+            "match": {
+              "location": "HomePageSteps.iTakeScreenshotOfSearchField()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@pp"
+          }
+        ]
+      }
+    ],
+    "name": "Element screenshot",
+    "description": "",
+    "id": "element-screenshot",
+    "keyword": "Feature",
+    "uri": "ElementScreenShot.feature"
+  }
+]
