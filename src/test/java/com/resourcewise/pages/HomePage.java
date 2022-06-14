@@ -9,7 +9,6 @@ public class HomePage extends DriverManager {
     WebElement loginButton;
 
     public void clickOnLoginButton(){
-        waitUntilElementIsVisible(loginButton,20,"Login Button is not visible");
         loginButton.click();
     }
 }
