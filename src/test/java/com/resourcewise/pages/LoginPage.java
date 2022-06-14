@@ -26,36 +26,5 @@ public class LoginPage extends DriverManager {
     }public void clickButton(){
         button.click();
 
-    }@FindBy(xpath = "//a[@class='ico-logout']")
-    WebElement logoutB;
-    public boolean logoutButtonDisplayed(){
-        return logoutB.isDisplayed();
     }
-    @FindBy(xpath = "//a[@class='ico-logout']")
-    WebElement logoutButton;
-    public void clickLogout(){
-        logoutButton.click();
-    }@FindBy(css = ".forgot-password")
-    WebElement forgotPassword;
-    public void forgotPasswordLink(){
-        forgotPassword.click();
-    }@FindBy(css = "#Email")
-    WebElement recoverEmail;
-    public void recoverMail(String rmail){
-        recoverEmail.sendKeys(rmail);
-    }@FindBy(xpath = "//button[@name='send-email']")
-    WebElement recoverBtn;
-    public void recoverButton(){
-        recoverBtn.click();
-    }@FindBy(xpath = "//p[@class='content']")
-    WebElement instrctionMsg;
-    public String instructionMessage(){
-         return instrctionMsg.getText();
-    }@FindBy(xpath = "//div[@class='page-title']")
-     WebElement pageTitle;
-    public String pageTitleMsg(){
-       return pageTitle.getText();
-
-    }
-
 }

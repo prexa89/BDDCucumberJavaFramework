@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.resourcewise.RunCukesTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.622 s <<< FAILURE! - in com.resourcewise.RunCukesTest
-initializationError(com.resourcewise.RunCukesTest)  Time elapsed: 0.033 s  <<< ERROR!
-cucumber.runtime.DuplicateStepDefinitionException: Duplicate step definitions in com.resourcewise.step_def.RegisterSteps.i_click_on_logoutbutton() in file:/C:/Users/JAY%20HATKESH/IdeaProjects/BDDCucumberJavaFramework/target/test-classes/ and com.resourcewise.step_def.LoginSteps.i_click_on_logoutbutton() in file:/C:/Users/JAY%20HATKESH/IdeaProjects/BDDCucumberJavaFramework/target/test-classes/
-

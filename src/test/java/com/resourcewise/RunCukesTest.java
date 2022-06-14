@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources",
            dryRun = false,
             strict = true,
-            tags = "@pj",
-            plugin = "json:target/cucumber-report/cucumber.json")
+            tags = "@Login",
+            plugin = "json:target/cucumber-report/cucumber.json")//java
 
 public class RunCukesTest {
     // a json report is generated as target/cucumber-report
