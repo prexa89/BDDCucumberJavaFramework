@@ -15,6 +15,8 @@ public class HomePage extends DriverManager {
     WebElement privacyText;
     @FindBy(id = "small-searchterms")
     private WebElement searchInputField;
+    @FindBy(xpath = "//*[@id=\"ph-topic\"]/div[2]/p")
+    WebElement privacyMsg;
 
     public void clickOnLoginButton(){
         waitUntilElementIsVisible(loginButton,20,"Login Button is not visible");
@@ -29,5 +31,10 @@ public class HomePage extends DriverManager {
 
     }
     public void takeSearchFieldScreenshot() throws IOException {
-       takeElementscreenshot(searchInputField, "search");
-}}
+        takeElementscreenshot(searchInputField, "search");
+
+    }   public String privacyMessege(){
+         return privacyMsg.getText();
+    }
+
+}

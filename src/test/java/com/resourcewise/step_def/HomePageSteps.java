@@ -40,7 +40,13 @@ public class HomePageSteps extends DriverManager {
     }@Then("^I take screenshot of search field$")
     public void iTakeScreenshotOfSearchField() throws IOException {
         homePage.takeSearchFieldScreenshot();
-    }}
+
+    }@Then("^I should see message$")
+    public void i_should_see_message()throws Throwable{
+       String privacyM= homePage.privacyMessege();
+        System.out.println(privacyM);
+    }
+}
 
 
 
