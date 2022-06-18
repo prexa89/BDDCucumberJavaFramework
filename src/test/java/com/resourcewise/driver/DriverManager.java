@@ -53,13 +53,12 @@ public class DriverManager {
     }
     public void runInHeadlessBrowser() throws IllegalAccessException {
         switch (browser){
-            case "chrome":
+            case "Chrome":
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
                 options.setHeadless(true);
                 options.addArguments("--window-size=1920,1080");
                 driver = new ChromeDriver(options);
-
                 break;
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();

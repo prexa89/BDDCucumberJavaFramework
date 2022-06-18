@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 15209002303,
+              "duration": 14380717004,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 2296322231,
+              "duration": 635684874,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 284458781,
+              "duration": 749104491,
               "status": "passed"
             },
             "line": 41,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 3651540910,
+              "duration": 911972340,
               "status": "passed"
             },
             "line": 42,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 212806406,
+              "duration": 151010929,
               "status": "passed"
             },
             "line": 43,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 771826017,
+              "duration": 489774544,
               "status": "passed"
             },
             "line": 44,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 660295390,
+              "duration": 643589332,
               "status": "passed"
             },
             "line": 45,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 239747251,
+              "duration": 333439081,
               "status": "passed"
             },
             "line": 46,
@@ -128,7 +128,7 @@
           },
           {
             "result": {
-              "duration": 260400640,
+              "duration": 170852084,
               "status": "passed"
             },
             "line": 47,
@@ -146,7 +146,7 @@
           },
           {
             "result": {
-              "duration": 335032288,
+              "duration": 185760592,
               "status": "passed"
             },
             "line": 48,
@@ -158,7 +158,7 @@
           },
           {
             "result": {
-              "duration": 418459473,
+              "duration": 255502050,
               "status": "passed"
             },
             "line": 49,
@@ -180,7 +180,7 @@
           },
           {
             "result": {
-              "duration": 2962788912,
+              "duration": 921127105,
               "status": "passed"
             },
             "line": 50,
@@ -192,7 +192,7 @@
           },
           {
             "result": {
-              "duration": 1928140953,
+              "duration": 665645116,
               "status": "passed"
             },
             "line": 51,
@@ -204,7 +204,7 @@
           },
           {
             "result": {
-              "duration": 1629563037,
+              "duration": 546416238,
               "status": "passed"
             },
             "line": 52,
@@ -216,7 +216,7 @@
           },
           {
             "result": {
-              "duration": 2471897490,
+              "duration": 1007530765,
               "status": "passed"
             },
             "line": 53,
@@ -228,7 +228,7 @@
           },
           {
             "result": {
-              "duration": 95627005,
+              "duration": 93606454,
               "status": "passed"
             },
             "line": 54,
@@ -240,7 +240,7 @@
           },
           {
             "result": {
-              "duration": 456500522,
+              "duration": 370119722,
               "status": "passed"
             },
             "line": 55,
@@ -252,7 +252,7 @@
           },
           {
             "result": {
-              "duration": 4558461638,
+              "duration": 3031145701,
               "status": "passed"
             },
             "line": 56,
@@ -264,7 +264,7 @@
           },
           {
             "result": {
-              "duration": 722678698,
+              "duration": 426100339,
               "status": "passed"
             },
             "line": 57,
@@ -276,7 +276,7 @@
           },
           {
             "result": {
-              "duration": 7278694773,
+              "duration": 1672572189,
               "status": "passed"
             },
             "line": 58,
@@ -288,7 +288,7 @@
           },
           {
             "result": {
-              "duration": 590351924,
+              "duration": 312324292,
               "status": "passed"
             },
             "line": 59,
@@ -306,7 +306,7 @@
           },
           {
             "result": {
-              "duration": 1837268378,
+              "duration": 888172191,
               "status": "passed"
             },
             "line": 60,
@@ -338,7 +338,7 @@
           },
           {
             "result": {
-              "duration": 149155063,
+              "duration": 123398744,
               "status": "passed"
             },
             "line": 63,
@@ -350,7 +350,7 @@
           },
           {
             "result": {
-              "duration": 2479305557,
+              "duration": 415329974,
               "status": "passed"
             },
             "comments": [
@@ -374,7 +374,7 @@
           },
           {
             "result": {
-              "duration": 443808042,
+              "duration": 110384357,
               "status": "passed"
             },
             "line": 66,
@@ -386,7 +386,7 @@
           },
           {
             "result": {
-              "duration": 276210955,
+              "duration": 70039572,
               "status": "passed"
             },
             "line": 67,
@@ -404,7 +404,7 @@
           },
           {
             "result": {
-              "duration": 182187421,
+              "duration": 80075149,
               "status": "passed"
             },
             "line": 68,
@@ -416,7 +416,7 @@
           },
           {
             "result": {
-              "duration": 1548574883,
+              "duration": 232106385,
               "status": "passed"
             },
             "line": 69,
@@ -428,7 +428,7 @@
           },
           {
             "result": {
-              "duration": 304920890,
+              "duration": 107845488,
               "status": "passed"
             },
             "line": 70,
@@ -440,7 +440,7 @@
           },
           {
             "result": {
-              "duration": 1935023238,
+              "duration": 686662400,
               "status": "passed"
             },
             "line": 71,
@@ -462,7 +462,7 @@
           },
           {
             "result": {
-              "duration": 452488810,
+              "duration": 292087518,
               "status": "passed"
             },
             "line": 72,
@@ -484,7 +484,7 @@
           },
           {
             "result": {
-              "duration": 197369784,
+              "duration": 112292008,
               "status": "passed"
             },
             "line": 73,
@@ -502,7 +502,7 @@
           },
           {
             "result": {
-              "duration": 378102557,
+              "duration": 113337974,
               "status": "passed"
             },
             "line": 74,
@@ -514,7 +514,7 @@
           },
           {
             "result": {
-              "duration": 915140095,
+              "duration": 351804594,
               "status": "passed"
             },
             "line": 75,
@@ -526,7 +526,7 @@
           },
           {
             "result": {
-              "duration": 7728162786,
+              "duration": 878225721,
               "status": "passed"
             },
             "line": 76,
@@ -538,7 +538,7 @@
           },
           {
             "result": {
-              "duration": 205110489,
+              "duration": 42356007,
               "status": "passed"
             },
             "line": 77,
@@ -566,6 +566,124 @@
       {
         "line": 1,
         "name": "@Checkout"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5840078303,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Validate Log In Page",
+        "description": "",
+        "id": "login-feature;validate-log-in-page",
+        "after": [
+          {
+            "result": {
+              "duration": 824342632,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56274068,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the home page",
+            "match": {
+              "location": "HomePageSteps.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1665939498,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I Click on the Log in",
+            "match": {
+              "location": "HomePageSteps.i_Click_on_the()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 161148210,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Should see \"Welcome, Please Sign In!\" text on \"login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome, Please Sign In!",
+                  "offset": 14
+                },
+                {
+                  "val": "login",
+                  "offset": 49
+                }
+              ],
+              "location": "CommanSteps.i_Should_see_text_on_page(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51287303,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the url should contain with\"/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/login",
+                  "offset": 28
+                }
+              ],
+              "location": "CommanSteps.the_url_should_contain_with(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Endtoend"
+          }
+        ]
+      }
+    ],
+    "name": "Login feature",
+    "description": "As a customer\r\nI Want to log in\r\nSo that I can see my e-mails",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Login"
       }
     ]
   }
