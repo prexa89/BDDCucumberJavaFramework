@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 14380717004,
+              "duration": 7878197729,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 40,
-        "name": "end to end functionality",
+        "line": 6,
+        "name": "Successful registration with mandatory fields",
         "description": "",
-        "id": "billing-feature;end-to-end-functionality",
+        "id": "registration-feature;successful-registration-with-mandatory-fields",
         "after": [
           {
             "result": {
-              "duration": 635684874,
+              "duration": 906470057,
               "status": "passed"
             },
             "match": {
@@ -34,10 +34,10 @@
         "steps": [
           {
             "result": {
-              "duration": 749104491,
+              "duration": 462152562,
               "status": "passed"
             },
-            "line": 41,
+            "line": 7,
             "name": "I am on the home page",
             "match": {
               "location": "HomePageSteps.i_am_on_the_home_page()"
@@ -46,10 +46,10 @@
           },
           {
             "result": {
-              "duration": 911972340,
+              "duration": 1118354597,
               "status": "passed"
             },
-            "line": 42,
+            "line": 8,
             "name": "I click on register",
             "match": {
               "location": "RegisterSteps.i_click_on_register()"
@@ -58,28 +58,10 @@
           },
           {
             "result": {
-              "duration": 151010929,
+              "duration": 638323115,
               "status": "passed"
             },
-            "line": 43,
-            "name": "I select gender as \"male\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "male",
-                  "offset": 20
-                }
-              ],
-              "location": "RegisterSteps.iSelectGenderAs(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 489774544,
-              "status": "passed"
-            },
-            "line": 44,
+            "line": 9,
             "name": "I enter firstname as\"preet\" and lastname as \"shah\"",
             "match": {
               "arguments": [
@@ -98,22 +80,10 @@
           },
           {
             "result": {
-              "duration": 643589332,
+              "duration": 434785306,
               "status": "passed"
             },
-            "line": 45,
-            "name": "I select date of birth and month of birth and year of birth",
-            "match": {
-              "location": "RegisterSteps.i_select_date_of_birth_and_month_of_birth_and_year_of_birth()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 333439081,
-              "status": "passed"
-            },
-            "line": 46,
+            "line": 10,
             "name": "I enter Email as \"preet12@yahoo.com\"",
             "match": {
               "arguments": [
@@ -128,40 +98,10 @@
           },
           {
             "result": {
-              "duration": 170852084,
+              "duration": 542007041,
               "status": "passed"
             },
-            "line": 47,
-            "name": "I enter company name as \"Amazon\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Amazon",
-                  "offset": 25
-                }
-              ],
-              "location": "RegisterSteps.i_enter_company_name_as(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 185760592,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "I do not select option for Newspaper",
-            "match": {
-              "location": "RegisterSteps.i_do_not_select_option_for_Newspaper()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 255502050,
-              "status": "passed"
-            },
-            "line": 49,
+            "line": 11,
             "name": "I enter  password as\"123456\" and  enter confirm password as \"123456\"",
             "match": {
               "arguments": [
@@ -180,403 +120,29 @@
           },
           {
             "result": {
-              "duration": 921127105,
+              "duration": 1460222984,
               "status": "passed"
             },
-            "line": 50,
+            "line": 12,
             "name": "I click on register button",
             "match": {
               "location": "RegisterSteps.i_click_on_register_button()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 665645116,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "I select category of computer",
-            "match": {
-              "location": "ShoppingCartSteps.i_select_category_of_computer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 546416238,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "I select subcategory of desktops",
-            "match": {
-              "location": "ShoppingCartSteps.i_select_subcategory_of_desktops()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1007530765,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "I select the Lenovo PC",
-            "match": {
-              "location": "ShoppingCartSteps.i_select_the_Lenovo_PC()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 93606454,
-              "status": "passed"
-            },
-            "line": 54,
-            "name": "I add this product into the cart",
-            "match": {
-              "location": "ShoppingCartSteps.i_add_this_product_into_the_cart()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 370119722,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "I close add to cart message",
-            "match": {
-              "location": "ShoppingCartSteps.i_close_add_to_cart_message()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3031145701,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "I click on shopping cart Button",
-            "match": {
-              "location": "ShoppingCartSteps.i_click_on_add_to_cart_Button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 426100339,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "I click on terms and condition",
-            "match": {
-              "location": "ShoppingCartSteps.i_click_on_terms_and_condition()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1672572189,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "I click on checkout button",
-            "match": {
-              "location": "ShoppingCartSteps.i_click_on_checkout_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 312324292,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "I select Country as \"United Kingdom\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "United Kingdom",
-                  "offset": 21
-                }
-              ],
-              "location": "BillingSteps.i_select_country_as(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 888172191,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "I enter following details",
-            "match": {
-              "location": "BillingSteps.i_enter_following_details(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "cityName",
-                  "address_1",
-                  "zipCode",
-                  "phoneNumber"
-                ],
-                "line": 61
-              },
-              {
-                "cells": [
-                  "London",
-                  "1504,Greenford road",
-                  "UB6 0HR",
-                  "01234567890"
-                ],
-                "line": 62
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 123398744,
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "I click on continue button",
-            "match": {
-              "location": "BillingSteps.i_click_on_continue_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 415329974,
-              "status": "passed"
-            },
-            "comments": [
-              {
-                "line": 64,
-                "value": "# And I am on checkout page"
-              }
-            ],
-            "line": 65,
-            "name": "I select shipping option 1",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 25
-                }
-              ],
-              "location": "BillingSteps.i_select_shipping_option(int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 110384357,
-              "status": "passed"
-            },
-            "line": 66,
-            "name": "I click on continue",
-            "match": {
-              "location": "BillingSteps.i_click_on_continue()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 70039572,
-              "status": "passed"
-            },
-            "line": 67,
-            "name": "I choose 2nd option for shipping method",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 9
-                }
-              ],
-              "location": "BillingSteps.i_choose_nd_option_for_shipping_method(int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 80075149,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "I click on shipping method continue",
-            "match": {
-              "location": "BillingSteps.i_click_on_shipping_method_continue()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 232106385,
-              "status": "passed"
-            },
-            "line": 69,
-            "name": "I choose credit card for payment",
-            "match": {
-              "location": "BillingSteps.i_choose_credit_card_for_payment()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 107845488,
-              "status": "passed"
-            },
-            "line": 70,
-            "name": "I click on continue btn",
-            "match": {
-              "location": "BillingSteps.i_click_on_continue_btn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 686662400,
-              "status": "passed"
-            },
-            "line": 71,
-            "name": "I enter cardholder name as \"xyz\" and cardnumber as\"123456789123456789\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "xyz",
-                  "offset": 28
-                },
-                {
-                  "val": "123456789123456789",
-                  "offset": 51
-                }
-              ],
-              "location": "BillingSteps.i_enter_cardholder_name_as_and_cardnumber_as(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 292087518,
-              "status": "passed"
-            },
-            "line": 72,
-            "name": "I enter card expire month as \"10\" and card expire year as \"2023\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 30
-                },
-                {
-                  "val": "2023",
-                  "offset": 59
-                }
-              ],
-              "location": "BillingSteps.i_enter_card_expire_month_as_and_card_expire_year_as(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 112292008,
-              "status": "passed"
-            },
-            "line": 73,
-            "name": "I enter card code as \"123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "123",
-                  "offset": 22
-                }
-              ],
-              "location": "BillingSteps.i_enter_card_code_as(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 113337974,
-              "status": "passed"
-            },
-            "line": 74,
-            "name": "I click continue for payment info",
-            "match": {
-              "location": "BillingSteps.i_click_continue_for_payment_info()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 351804594,
-              "status": "passed"
-            },
-            "line": 75,
-            "name": "I click on confirm",
-            "match": {
-              "location": "BillingSteps.i_click_on_confirm()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 878225721,
-              "status": "passed"
-            },
-            "line": 76,
-            "name": "I should get order number",
-            "match": {
-              "location": "BillingSteps.i_should_get_order_number()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 42356007,
-              "status": "passed"
-            },
-            "line": 77,
-            "name": "I should get order message",
-            "match": {
-              "location": "BillingSteps.i_should_get_order_message()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 39,
-            "name": "@Endtoend"
           }
         ]
-      }
-    ],
-    "name": "Billing feature",
-    "description": "As a customer I Want to pay for\r\na product.",
-    "id": "billing-feature",
-    "keyword": "Feature",
-    "uri": "Billing.feature",
-    "tags": [
+      },
       {
-        "line": 1,
-        "name": "@Checkout"
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
+        "comments": [
+          {
+            "line": 13,
+            "value": "#Then : I should be registered"
+          }
+        ],
         "before": [
           {
             "result": {
-              "duration": 5840078303,
+              "duration": 4948286287,
               "status": "passed"
             },
             "match": {
@@ -584,14 +150,14 @@
             }
           }
         ],
-        "line": 8,
-        "name": "Validate Log In Page",
+        "line": 15,
+        "name": "Successful registration with all fields",
         "description": "",
-        "id": "login-feature;validate-log-in-page",
+        "id": "registration-feature;successful-registration-with-all-fields",
         "after": [
           {
             "result": {
-              "duration": 824342632,
+              "duration": 859936253,
               "status": "passed"
             },
             "match": {
@@ -604,10 +170,10 @@
         "steps": [
           {
             "result": {
-              "duration": 56274068,
+              "duration": 20016571,
               "status": "passed"
             },
-            "line": 9,
+            "line": 16,
             "name": "I am on the home page",
             "match": {
               "location": "HomePageSteps.i_am_on_the_home_page()"
@@ -616,32 +182,102 @@
           },
           {
             "result": {
-              "duration": 1665939498,
+              "duration": 1283312044,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I Click on the Log in",
+            "line": 17,
+            "name": "I click on register",
             "match": {
-              "location": "HomePageSteps.i_Click_on_the()"
+              "location": "RegisterSteps.i_click_on_register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 333342042,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I select gender as female",
+            "match": {
+              "location": "RegisterSteps.i_select_gender_as_female()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 161148210,
+              "duration": 1662216103,
               "status": "passed"
             },
-            "line": 11,
-            "name": "I Should see \"Welcome, Please Sign In!\" text on \"login\" page",
+            "line": 19,
+            "name": "I enter following details to register",
+            "match": {
+              "location": "RegisterSteps.i_enter_following_details_to_register(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "email",
+                  "password",
+                  "confirmPassword"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "vedant",
+                  "khunt",
+                  "test@gmail.com",
+                  "hello@123",
+                  "hello@123"
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 724738439,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I select date of birth and month of birth and year of birth",
+            "match": {
+              "location": "RegisterSteps.i_select_date_of_birth_and_month_of_birth_and_year_of_birth()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1330823234,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on register button",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119937540,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I Should see \"Your registration completed\" text on \"registration\" page",
             "match": {
               "arguments": [
                 {
-                  "val": "Welcome, Please Sign In!",
+                  "val": "Your registration completed",
                   "offset": 14
                 },
                 {
-                  "val": "login",
-                  "offset": 49
+                  "val": "registration",
+                  "offset": 52
                 }
               ],
               "location": "CommanSteps.i_Should_see_text_on_page(String,String)"
@@ -650,15 +286,15 @@
           },
           {
             "result": {
-              "duration": 51287303,
+              "duration": 24094064,
               "status": "passed"
             },
-            "line": 12,
-            "name": "the url should contain with\"/login\"",
+            "line": 25,
+            "name": "the url should contain with\"/registerresult\"",
             "match": {
               "arguments": [
                 {
-                  "val": "/login",
+                  "val": "/registerresult",
                   "offset": 28
                 }
               ],
@@ -666,24 +302,1004 @@
             },
             "keyword": "And "
           }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5481385358,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Successful registration with all optional fields",
+        "description": "",
+        "id": "registration-feature;successful-registration-with-all-optional-fields",
+        "after": [
+          {
+            "result": {
+              "duration": 814832370,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17401657,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I am on the home page",
+            "match": {
+              "location": "HomePageSteps.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1277443533,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I click on register",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 220820499,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I select gender as female",
+            "match": {
+              "location": "RegisterSteps.i_select_gender_as_female()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1866792879,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I enter following details to register",
+            "match": {
+              "location": "RegisterSteps.i_enter_following_details_to_register(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "email",
+                  "password",
+                  "confirmPassword"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "vedant1",
+                  "khunt",
+                  "test1@gmail.com",
+                  "hello@123",
+                  "hello@123"
+                ],
+                "line": 33
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 932376133,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I select date of birth and month of birth and year of birth",
+            "match": {
+              "location": "RegisterSteps.i_select_date_of_birth_and_month_of_birth_and_year_of_birth()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235525134,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I enter company name as \"Amazon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amazon",
+                  "offset": 25
+                }
+              ],
+              "location": "RegisterSteps.i_enter_company_name_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 490354443,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I select  option for Newspaper",
+            "match": {
+              "location": "RegisterSteps.i_select_option_for_Newspaper()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1803141069,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I click on register button",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148989911,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I Should see \"Your registration completed\" text on \"registration\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your registration completed",
+                  "offset": 14
+                },
+                {
+                  "val": "registration",
+                  "offset": 52
+                }
+              ],
+              "location": "CommanSteps.i_Should_see_text_on_page(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16798431,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the url should contain with\"/registerresult\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/registerresult",
+                  "offset": 28
+                }
+              ],
+              "location": "CommanSteps.the_url_should_contain_with(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4092521300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Successful registration",
+        "description": "",
+        "id": "registration-feature;successful-registration",
+        "after": [
+          {
+            "result": {
+              "duration": 895013422,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13648871,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I am on the home page",
+            "match": {
+              "location": "HomePageSteps.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 756788746,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I click on register",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 102165923,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I select gender as \"male\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "male",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterSteps.iSelectGenderAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 788499418,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I enter following details to register",
+            "match": {
+              "location": "RegisterSteps.i_enter_following_details_to_register(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "email",
+                  "password",
+                  "confirmPassword"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "parth",
+                  "khatri",
+                  "test1@gmail.com",
+                  "123456",
+                  "123456"
+                ],
+                "line": 48
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 360822665,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I select date of birth and month of birth and year of birth",
+            "match": {
+              "location": "RegisterSteps.i_select_date_of_birth_and_month_of_birth_and_year_of_birth()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151020727,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I enter company name as \"Amazon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amazon",
+                  "offset": 25
+                }
+              ],
+              "location": "RegisterSteps.i_enter_company_name_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153234889,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I do not select option for Newspaper",
+            "match": {
+              "location": "RegisterSteps.i_do_not_select_option_for_Newspaper()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1201221942,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I click on register button",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 339918282,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I Should see \"Your registration completed\" text on \"registration\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your registration completed",
+                  "offset": 14
+                },
+                {
+                  "val": "registration",
+                  "offset": 52
+                }
+              ],
+              "location": "CommanSteps.i_Should_see_text_on_page(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43370249,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "the url should contain with\"/registerresult\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/registerresult",
+                  "offset": 28
+                }
+              ],
+              "location": "CommanSteps.the_url_should_contain_with(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6417968214,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 65,
+        "name": "Successful multiple registration with mandatory fields",
+        "description": "",
+        "id": "registration-feature;successful-multiple-registration-with-mandatory-fields;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1780126094,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 50578174,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I am on the home page",
+            "match": {
+              "location": "HomePageSteps.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1340405808,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I click on register",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 643112069,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I enter firstname as\"priya\" and lastname as \"shah\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "priya",
+                  "offset": 21
+                },
+                {
+                  "val": "shah",
+                  "offset": 45
+                }
+              ],
+              "location": "RegisterSteps.i_enter_firstname_as_and_lastname_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 319521954,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I enter Email as \"admin@yahoo.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yahoo.com",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterSteps.i_enter_Email_as(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 528631558,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I enter  password as\"123456\" and  enter confirm password as \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456",
+                  "offset": 21
+                },
+                {
+                  "val": "123456",
+                  "offset": 61
+                }
+              ],
+              "location": "RegisterSteps.i_enter_password_as_and_enter_confirm_password_as(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1292793381,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I click on register button",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register_button()"
+            },
+            "keyword": "And "
+          }
         ],
         "tags": [
           {
-            "line": 7,
-            "name": "@Endtoend"
+            "line": 1,
+            "name": "@Registration"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6066914271,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 66,
+        "name": "Successful multiple registration with mandatory fields",
+        "description": "",
+        "id": "registration-feature;successful-multiple-registration-with-mandatory-fields;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 925537702,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 27904700,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I am on the home page",
+            "match": {
+              "location": "HomePageSteps.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 858256736,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I click on register",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 430925218,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I enter firstname as\"sam\" and lastname as \"dev\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sam",
+                  "offset": 21
+                },
+                {
+                  "val": "dev",
+                  "offset": 43
+                }
+              ],
+              "location": "RegisterSteps.i_enter_firstname_as_and_lastname_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 309260107,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I enter Email as \"admin1@yahoo.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin1@yahoo.com",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterSteps.i_enter_Email_as(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 318590288,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I enter  password as\"123456\" and  enter confirm password as \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456",
+                  "offset": 21
+                },
+                {
+                  "val": "123456",
+                  "offset": 61
+                }
+              ],
+              "location": "RegisterSteps.i_enter_password_as_and_enter_confirm_password_as(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1393243398,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I click on register button",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Registration"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4478164419,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 67,
+        "name": "Successful multiple registration with mandatory fields",
+        "description": "",
+        "id": "registration-feature;successful-multiple-registration-with-mandatory-fields;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 619063726,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14302483,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I am on the home page",
+            "match": {
+              "location": "HomePageSteps.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 885314681,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I click on register",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 361906885,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I enter firstname as\"preet\" and lastname as \"shah\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "preet",
+                  "offset": 21
+                },
+                {
+                  "val": "shah",
+                  "offset": 45
+                }
+              ],
+              "location": "RegisterSteps.i_enter_firstname_as_and_lastname_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 157404288,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I enter Email as \"admin2@yahoo.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin2@yahoo.com",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterSteps.i_enter_Email_as(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 219616847,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I enter  password as\"456789\" and  enter confirm password as \"456789\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "456789",
+                  "offset": 21
+                },
+                {
+                  "val": "456789",
+                  "offset": 61
+                }
+              ],
+              "location": "RegisterSteps.i_enter_password_as_and_enter_confirm_password_as(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 875107885,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I click on register button",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Registration"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7389256413,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 68,
+        "name": "Successful multiple registration with mandatory fields",
+        "description": "",
+        "id": "registration-feature;successful-multiple-registration-with-mandatory-fields;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1074622785,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7357682,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I am on the home page",
+            "match": {
+              "location": "HomePageSteps.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 752211130,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I click on register",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 499576855,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I enter firstname as\"harry\" and lastname as \"dave\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "harry",
+                  "offset": 21
+                },
+                {
+                  "val": "dave",
+                  "offset": 45
+                }
+              ],
+              "location": "RegisterSteps.i_enter_firstname_as_and_lastname_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 136325423,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I enter Email as \"admin3@yahoo.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin3@yahoo.com",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterSteps.i_enter_Email_as(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 224054502,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I enter  password as\"123456\" and  enter confirm password as \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456",
+                  "offset": 21
+                },
+                {
+                  "val": "123456",
+                  "offset": 61
+                }
+              ],
+              "location": "RegisterSteps.i_enter_password_as_and_enter_confirm_password_as(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1829718018,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I click on register button",
+            "match": {
+              "location": "RegisterSteps.i_click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Registration"
           }
         ]
       }
     ],
-    "name": "Login feature",
-    "description": "As a customer\r\nI Want to log in\r\nSo that I can see my e-mails",
-    "id": "login-feature",
+    "name": "Registration feature",
+    "description": "As a customer I want to register\r\nso I can login",
+    "id": "registration-feature",
     "keyword": "Feature",
-    "uri": "Login.feature",
+    "uri": "Registration.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@Login"
+        "name": "@Registration"
       }
     ]
   }
