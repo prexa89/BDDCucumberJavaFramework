@@ -24,6 +24,7 @@ public class BillingSteps extends DriverManager {
     }@And("^I select Country as \"([^\"]*)\"$")
     public void i_select_country_as(String Country) throws Throwable {
         billingPage.country(Country);
+
     }@And("^I enter following details$")
     public void i_enter_following_details(DataTable infoTable) throws Throwable {
         List<Map<String, String>> data = infoTable.asMaps(String.class, String.class);
@@ -51,19 +52,24 @@ public class BillingSteps extends DriverManager {
     public void i_choose_nd_option_for_shipping_method(int arg1) throws Throwable {
         billingPage.shippingOption_1();
 
+
     }@And("^I click on shipping method continue$")
     public void i_click_on_shipping_method_continue() throws Throwable {
         billingPage.shippingMethodContinueBtn();
+
     }@And("^I choose credit card for payment$")
     public void i_choose_credit_card_for_payment() throws Throwable {
         billingPage.paymentMethodOne();
+
     }@And("^I click on continue btn$")
     public void i_click_on_continue_btn() throws Throwable {
         billingPage.paymentMethodContiBtn();
+
     }@And("^I enter cardholder name as \"([^\"]*)\" and cardnumber as\"([^\"]*)\"$")
     public void i_enter_cardholder_name_as_and_cardnumber_as(String Namee, String Num) throws Throwable {
         billingPage.cardholderNam(Namee);
         billingPage.cardNum(Num);
+
     }@And("^I enter card expire month as \"([^\"]*)\" and card expire year as \"([^\"]*)\"$")
     public void i_enter_card_expire_month_as_and_card_expire_year_as(String ExpM, String ExpY) throws Throwable {
         billingPage.cardExpireMonth(ExpM);
@@ -72,16 +78,20 @@ public class BillingSteps extends DriverManager {
     }@And("^I enter card code as \"([^\"]*)\"$")
     public void i_enter_card_code_as(String Code) throws Throwable {
         billingPage.codeOfCard(Code);
+
     }@And("^I click continue for payment info$")
     public void i_click_continue_for_payment_info() throws Throwable {
         billingPage.contiBtnPaymentInfo();
+
     }@And("^I click on confirm$")
     public void i_click_on_confirm() throws Throwable {
         billingPage.confirmOrderBtn();
+
     }@And("^I should get order number$")
     public void i_should_get_order_number() throws Throwable {
      String orderNumber  =billingPage.orderNumber();
         System.out.println("My order" + " "+orderNumber);
+
     }@And("^I should get order message$")
       public void i_should_get_order_message() throws Throwable {
        String conMsg = billingPage.confirmationMessage();

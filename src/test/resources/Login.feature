@@ -4,7 +4,6 @@ Feature: Login feature
   I Want to log in
   So that I can see my e-mails
 
-@Endtoend
   Scenario: Validate Log In Page
     Given I am on the home page
     When I Click on the Log in

@@ -39,11 +39,13 @@ public class ShoppingCartSteps extends DriverManager {
     @And("^I close add to cart message$")
     public void i_close_add_to_cart_message() throws Throwable {
         categoryPage.tabCloseB();
+        Thread.sleep(5000);
     }
 
     @When("^I click on shopping cart Button$")
     public void i_click_on_add_to_cart_Button() throws Throwable {
         categoryPage.basketButton();
+        Thread.sleep(3000);
 
     }@And("^I click on terms and condition$")
     public void i_click_on_terms_and_condition() throws Throwable {
